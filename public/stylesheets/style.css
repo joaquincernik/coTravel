@@ -13,7 +13,20 @@
   font-style: normal;
   font-size: 50px; 
 }
-
+.title-viajes{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;  
+}
+.text-viajes{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px; 
+}
 .text-card{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
