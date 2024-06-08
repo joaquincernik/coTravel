@@ -26,15 +26,15 @@
 
 
 <body class="bg-light">
-    <header>
+    <header class="mb-3">
         <!-- Image and text -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <img src="/images/logocoTravelSinFondo.png" width="250px" class="d-inline-block" alt="">
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active pr-4 pl-5" href="#">Inicio <span
-                            class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link pr-4" href="#">Viajes disponibles</a>
+                    <a class="nav-item nav-link active pr-4 pl-5" href="/">Inicio <span
+                        class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link pr-4" href="/viajes/viajes-disponibles">Viajes disponibles</a>
                     <a class="nav-item nav-link pr-4" href="#">Mis viajes</a>
                     <a class="nav-item nav-link pr-4" href="#">Conoce nuestro equipo</a>
                     <a class="nav-item nav-link pr-4" href="#">Registrarme</a>
@@ -50,63 +50,37 @@
     </header>
 
 
-<div class="container-sm d-flex flex-row flex-wrap w-5">
-    <div class="container w-50 bg-white pt-5 mt-5 border-right border border-light d-flex flex-row d-flex justify-content-around">
+    <h1 class="title p-4 text-center text-dark">Viajes disponibles</h1>
     
-    <div class="p-2">
-        <img src="/images/avatar1.png" class="rounded" width="300px">
-    </div>
-
-    <div class="p-3 ">
-        <h1 class="title-viajes p-3 text-center text-dark">Chaco-Cordoba</h1>
-        <p class="text-viajes p-5">Con coTravel podes bla bla Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Perspiciatis
-           </p>
-    </div>
-</div>
-
-<div class="container w-50 bg-white pt-5 mt-5  d-flex flex-row d-flex justify-content-around">
-    
-    <div class="p-2">
-        <img src="/images/avatar1.png" class="rounded" width="300px">
-    </div>
-
-    <div class="p-3 ">
-        <h1 class="title-viajes p-3 text-center text-dark">Chaco-Cordoba</h1>
-        <p class="text-viajes p-5">Con coTravel podes bla bla Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Perspiciatis
-           </p>
-    </div>
-</div>
-
-<div class="container w-50 bg-white pt-5 mt-5 border-right border border-light d-flex flex-row d-flex justify-content-around">
+    <div class="container-sm d-flex flex-row flex-wrap w-5 justify-content-center mt-2">
+    <% for(i=0;i<8;i++){ %>
+        <div style="width:45%;" class="container bg-white py-5 m-2  d-flex flex-row d-flex justify-content-around">
         
-        <div class="p-2">
-            <img src="/images/avatar1.png" class="rounded" width="300px">
-        </div>
-    
-        <div class="p-3 ">
-            <h1 class="title-viajes p-3 text-center text-dark">Chaco-Cordoba</h1>
-            <p class="text-viajes p-5">Con coTravel podes bla bla Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Perspiciatis
-               </p>
-        </div>
-    </div>
-    
-    <div class="container w-50 bg-white pt-5 mt-5  d-flex flex-row d-flex justify-content-around">
+            <div class="d-flex align-items-center ">
+                <img src="/images/avatar1.png" class="rounded" width="200px">
+            </div>
         
-        <div class="p-2">
-            <img src="/images/avatar1.png" class="rounded" width="300px">
-        </div>
+            <div class="px-5 border-left">
+                <h1 class="title-viajes p-3 text-center text-dark">Chaco-Cordoba</h1>
     
-        <div class="p-3 ">
-            <h1 class="title-viajes p-3 text-center text-dark">Chaco-Cordoba</h1>
-            <p class="text-viajes p-5">Con coTravel podes bla bla Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Perspiciatis
-               </p>
-        </div>
-    </div>
+                <div class="p-2">
+                       <p class="text-viajes-disponibles"><b>Conductor:</b> Joaqiun Cernik</p>
+                       <p class="text-viajes-disponibles"><b>Origen:</b> Saenz Pena, Chaco</p>
+                       <p class="text-viajes-disponibles"><b>Destino:</b> Cordoba, Cordoba</p>
+                       <p class="text-viajes-disponibles"><b>Costo de viaje</b> $17000</p>
+                       <p class="text-viajes-disponibles"><b>Fecha de salida</b> 17/18</p>
 
+
+
+
+                       <a href="#" class="btn btn-primary bg-dark border border-dark my-2 px-3 my-2">Ver detalle</a>
+                    </div>
+               
+            </div>
+        </div>
+
+
+   <% }%>
 </div>
 
 <footer style="margin-top: 200px; height: 250px;"
