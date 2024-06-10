@@ -3,11 +3,11 @@
     <div class="d-flex justify-content-center">
         <div class="container bg-white py-5 m-2 d-flex flex-column justify-content-center ">
             <h1 class="title text-center pb-2">Registrarme</h1>
-            <form class="border-top border-secondary p-5">
+            <form class="border-top border-secondary p-5" action="/users/register" method="POST">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="nombre">Nombre</label>
-                        <input type="text" class="form-control" id="npmbre" placeholder="Nombre">
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="apellido">Apellido</label>
@@ -15,6 +15,7 @@
                     </div>
                 </div>
 
+                
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="dni">DNI</label>
@@ -37,6 +38,7 @@
                         placeholder="Explica un poco de por que usarias esta aplicacion para viajar, ej: conocer personas nuevas o lugares nuevos"></textarea>
                 </div>
 
+                <!--
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text">Subir</span>
@@ -47,7 +49,7 @@
                         <label class="custom-file-label" for="foto">Elegir foto</label>
                     </div>
                 </div>
-
+                -->
                 <p>
                     <a class="btn btn-primary mt-4 pb-1" data-toggle="collapse" href="#collapseExample" role="button"
                         aria-expanded="false" aria-controls="collapseExample">
@@ -55,6 +57,8 @@
                     </a>
 
                 </p>
+
+                <!--
                 <div class="collapse" id="collapseExample">
 
                     <div class="form-row">
@@ -115,7 +119,7 @@
                     </div>
                 </div>
                 </div>
-
+                -->
                 <button type="submit" class="btn btn-primary bg-dark border-dark my-3">Registrarme</button>
 
             </form>
