@@ -28,8 +28,7 @@
 
                 <div class="form-group">
                     <label for="edad">Edad</label>
-                    <input class="form-control" id="edad" type="number"
-                        placeholder="Edad">
+                    <input class="form-control" id="edad" type="number" placeholder="Edad">
                 </div>
 
                 <div class="form-group">
@@ -50,36 +49,77 @@
                 </div>
 
                 <p>
-                    <a class="btn btn-primary mt-4 pb-1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                     Registrar vehiculo
+                    <a class="btn btn-primary mt-4 pb-1" data-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Registrar vehiculo
                     </a>
-                   
-                  </p>
-                  <div class="collapse" id="collapseExample">
-                   
+
+                </p>
+                <div class="collapse" id="collapseExample">
+
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                          <label for="vehiculo">Vehiculo</label>
-                          <input type="text" class="form-control" id="vehiculo" placeholder="En caso de ser conductor, ingrese su vehiculo">
+                            <label for="vehiculo">Modelo de vehiculo</label>
+                            <input type="text" class="form-control" id="vehiculo"
+                                placeholder="En caso de ser conductor, ingrese el modelo de su vehiculo">
                         </div>
                         <div class="form-group col-md-6">
-                          <label for="patente">Patente</label>
-                          <input type="text" class="form-control" id="patente" placeholder="Patente">
+                            <label for="patente">Patente</label>
+                            <input type="text" class="form-control" id="patente" placeholder="Patente">
                         </div>
-                      </div>
-    
-                      <div class="form-group">
+                    </div>
+
+                    <div class="form-group">
                         <label for="capacidad">Capacidad</label>
                         <input type="number" class="form-control" id="capacidad" placeholder="Capacidad">
                     </div>
-    
-                  
-                  </div>
+
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Subir</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input class="custom-file-input" type="file" accept=".jpg,.jpeg, .png, .jpeg, .svg"
+                                        name="sedula" id="sedula">
+                                    <label class="custom-file-label" for="sedula">Sedula</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Subir</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input class="custom-file-input" type="file" accept=".jpg,.jpeg, .png, .jpeg, .svg"
+                                        name="itv" id="itv">
+                                    <label class="custom-file-label" for="itv">ITV</label>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
                 
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Subir</span>
+                    </div>
+                    <div class="custom-file">
+                        <input class="custom-file-input" type="file" accept=".jpg,.jpeg, .png, .jpeg, .svg" name="seguro"
+                            id="seguro">
+                        <label class="custom-file-label" for="seguro">Seguro</label>
+                    </div>
+                </div>
+                </div>
+
                 <button type="submit" class="btn btn-primary bg-dark border-dark my-3">Registrarme</button>
-              
-            </form> 
-           
+
+            </form>
+
         </div>
     </div>
 
